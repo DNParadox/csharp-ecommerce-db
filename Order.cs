@@ -9,13 +9,17 @@
     
     public bool Status { get; set; }
 
-    // Liste
-    // Many to / (In questo caso Many e To 1)
-    public List<Product> Products { get; set; }
-    public List<Employee> Employees { get; set; }
-    public List<Customer> Customers { get; set; }
+    // Foreign Key
 
-    // 1 to / (In questo caso Many)
-    public Payment Payments { get; set; }
+    // Liste // Many to / (In questo caso Many e To 1)
+    public List<Product> Products { get; set; }
+    public List<Payment> Payments { get; set; }
+
+    //Singole //  1 to / (In questo caso Many)
+    public Customer Customers { get; set; }
+    public int Customers_id { get; set; }
+
+    public Employee Employees { get; set; }
+    public int Employee_id { get; set; }
 
 }

@@ -7,6 +7,7 @@ public class Payment
     public DateTime Date { get; set; }
     public float Amount { get; set; }
     public bool Status { get; set; }
-    public List<Order> Orders { get; set; }
+    public int OrderId { get; set; }
+    public Order Order { get; set; }
 
 }
